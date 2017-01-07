@@ -1,0 +1,10 @@
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\bin\Debug\WFA22_RPG.exe.config
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\bin\Debug\WFA22_RPG.exe
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\bin\Debug\WFA22_RPG.pdb
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.csprojResolveAssemblyReference.cache
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.Form1.resources
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.Properties.Resources.resources
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.csproj.GenerateResource.Cache
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.exe
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.pdb
+c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.Resource.resources
