@@ -54,7 +54,6 @@
             this.pictureBoxBowItem = new System.Windows.Forms.PictureBox();
             this.pictureBoxSwordItem = new System.Windows.Forms.PictureBox();
             this.timerItems = new System.Windows.Forms.Timer(this.components);
-            this.pictureBoxChange = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBowList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMaceList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPotionBlueList)).BeginInit();
@@ -69,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMaceItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBowItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSwordItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChange)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxBowList
@@ -82,6 +80,7 @@
             this.pictureBoxBowList.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBoxBowList.TabIndex = 0;
             this.pictureBoxBowList.TabStop = false;
+            this.pictureBoxBowList.Click += new System.EventHandler(this.pictureBoxBowList_Click);
             // 
             // pictureBoxMaceList
             // 
@@ -94,6 +93,7 @@
             this.pictureBoxMaceList.TabIndex = 1;
             this.pictureBoxMaceList.TabStop = false;
             this.pictureBoxMaceList.Visible = false;
+            this.pictureBoxMaceList.Click += new System.EventHandler(this.pictureBoxMaceList_Click);
             // 
             // pictureBoxPotionBlueList
             // 
@@ -106,6 +106,7 @@
             this.pictureBoxPotionBlueList.TabIndex = 2;
             this.pictureBoxPotionBlueList.TabStop = false;
             this.pictureBoxPotionBlueList.Visible = false;
+            this.pictureBoxPotionBlueList.Click += new System.EventHandler(this.pictureBoxPotionBlueList_Click);
             // 
             // pictureBoxPotionRedList
             // 
@@ -118,6 +119,7 @@
             this.pictureBoxPotionRedList.TabIndex = 3;
             this.pictureBoxPotionRedList.TabStop = false;
             this.pictureBoxPotionRedList.Visible = false;
+            this.pictureBoxPotionRedList.Click += new System.EventHandler(this.pictureBoxPotionRedList_Click);
             // 
             // pictureBoxSwordList
             // 
@@ -130,6 +132,7 @@
             this.pictureBoxSwordList.TabIndex = 4;
             this.pictureBoxSwordList.TabStop = false;
             this.pictureBoxSwordList.Visible = false;
+            this.pictureBoxSwordList.Click += new System.EventHandler(this.pictureBoxSwordList_Click);
             // 
             // pictureBoxPlayer
             // 
@@ -280,9 +283,9 @@
             // 
             this.pictureBoxPotionRedItem.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxPotionRedItem.Image = global::WFA22_RPG.Resource.potion_red;
-            this.pictureBoxPotionRedItem.Location = new System.Drawing.Point(471, 171);
+            this.pictureBoxPotionRedItem.Location = new System.Drawing.Point(467, 171);
             this.pictureBoxPotionRedItem.Name = "pictureBoxPotionRedItem";
-            this.pictureBoxPotionRedItem.Size = new System.Drawing.Size(35, 40);
+            this.pictureBoxPotionRedItem.Size = new System.Drawing.Size(37, 33);
             this.pictureBoxPotionRedItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPotionRedItem.TabIndex = 22;
             this.pictureBoxPotionRedItem.TabStop = false;
@@ -336,22 +339,12 @@
             this.pictureBoxSwordItem.TabStop = false;
             this.pictureBoxSwordItem.Visible = false;
             // 
-            // pictureBoxChange
-            // 
-            this.pictureBoxChange.Location = new System.Drawing.Point(269, 70);
-            this.pictureBoxChange.Name = "pictureBoxChange";
-            this.pictureBoxChange.Size = new System.Drawing.Size(45, 60);
-            this.pictureBoxChange.TabIndex = 25;
-            this.pictureBoxChange.TabStop = false;
-            this.pictureBoxChange.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WFA22_RPG.Resource.dungeon600x400;
             this.ClientSize = new System.Drawing.Size(602, 401);
-            this.Controls.Add(this.pictureBoxChange);
             this.Controls.Add(this.pictureBoxSwordItem);
             this.Controls.Add(this.pictureBoxPotionRedItem);
             this.Controls.Add(this.pictureBoxPotionBlueItem);
@@ -393,7 +386,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMaceItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBowItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSwordItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChange)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,7 +418,6 @@
         private System.Windows.Forms.PictureBox pictureBoxBowItem;
         private System.Windows.Forms.PictureBox pictureBoxSwordItem;
         private System.Windows.Forms.Timer timerItems;
-        private System.Windows.Forms.PictureBox pictureBoxChange;
     }
 }
 
