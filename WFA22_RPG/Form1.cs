@@ -8,10 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-/// <summary>
-/// Dodac progres bar na humanem i dac kolor czerwony tła tego progresbara
-/// zalatwione poruszanie teraz atak 
-/// </summary>
+
 
 
 namespace WFA22_RPG
@@ -23,11 +20,10 @@ namespace WFA22_RPG
         HumanAttack humanAttack;
         ProgressBar monsterBar;
         PictureBox monsterPic;
-        PictureBox picItem;
         ItemsViasble itemV;
-        Random rand;
+        
         int round = 0;
-        private string[] tabPicture = { "pictureBoxBowItem", "pictureBoxMaceItem", "pictureBoxSwordItem", "pictureBoxPotionBlueItem", "pictureBoxPotionRedItem"};
+        private List<PictureBox> listPicture = new List<PictureBox>();
         public Form1()
         {
             InitializeComponent();
@@ -40,15 +36,19 @@ namespace WFA22_RPG
             moveHuman = new MoveHuman(progressBarHuman);
             moveMonster = new MoveMonster(pictureBoxPlayer,progressBarBat);
             humanAttack = new HumanAttack(pictureBoxPlayer, monsterPic,progressBarHuman, monsterBar, 1, 2);
-            itemV = new ItemsViasble();
-           
+            itemV = new ItemsViasble(pictureBoxSwordItem, pictureBoxBowItem, pictureBoxMaceItem, pictureBoxPotionBlueItem, pictureBoxPotionRedItem,
+                pictureBoxSwordList,pictureBoxBowList,pictureBoxMaceList,pictureBoxPotionBlueList,pictureBoxPotionRedList);
+            initList();
             
-        }
+            pictureBoxPlayer.BringToFront();
+
+    }
 
         private void buttonUp_Click(object sender, EventArgs e)
         {
             moveHuman.Move(pictureBoxPlayer,progressBarHuman, 1);
             moveMonster.Move(monsterPic, monsterBar, 0);
+            itemV.CheckNumberOfMove(round);
             round++;
         }
 
@@ -56,6 +56,7 @@ namespace WFA22_RPG
         {
             moveHuman.Move(pictureBoxPlayer,progressBarHuman, 2);
             moveMonster.Move(monsterPic, monsterBar, 0);
+            itemV.CheckNumberOfMove(round);
             round++;
         }
 
@@ -63,6 +64,7 @@ namespace WFA22_RPG
         {
             moveHuman.Move(pictureBoxPlayer,progressBarHuman, 4);
             moveMonster.Move(monsterPic, monsterBar, 0);
+            itemV.CheckNumberOfMove(round);
             round++;
         }
 
@@ -70,6 +72,7 @@ namespace WFA22_RPG
         {
             moveHuman.Move(pictureBoxPlayer,progressBarHuman, 3);
             moveMonster.Move(monsterPic, monsterBar, 0);
+            itemV.CheckNumberOfMove(round);
             round++;
         }
 
@@ -77,24 +80,14 @@ namespace WFA22_RPG
         {
             humanAttack.Attack();
             moveMonster.Move(monsterPic, monsterBar, 0);
+            itemV.CheckNumberOfMove(round);
             round++;
         }
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (round % 6 == 0)
-            {
-                rand = new Random();
-                int a = rand.Next(4);
-                picItem = new PictureBox();
-               // picItem.Name = itemV.ItemNumberName(a);
-                //picItem.Visible = true;
-
-                // trzeba zeobic zeby pokazywal picturebox
-                // itemV.ItemNumberName zwraca stringa pictureboxbatitem itd...
-                // 
-            }
+           
 
             if (humanAttack.IsDeath() && humanAttack.numberOfKilled == 2)
             {
@@ -128,6 +121,59 @@ namespace WFA22_RPG
 
         }
 
+        private void initList()
+        {
+            listPicture.Add(pictureBoxSwordList);
+            listPicture.Add(pictureBoxBowList);
+            listPicture.Add(pictureBoxMaceList);
+            listPicture.Add(pictureBoxPotionBlueList);
+            listPicture.Add(pictureBoxPotionRedList);
+        }
+
+        private void pictureBoxBowList_Click(object sender, EventArgs e)
+        {
+            foreach (PictureBox item in listPicture)
+            {
+                item.BorderStyle = BorderStyle.None;
+            }
+            pictureBoxBowList.BorderStyle = BorderStyle.Fixed3D;
+        }
+
        
+        private void pictureBoxMaceList_Click(object sender, EventArgs e)
+        {
+            foreach (PictureBox item in listPicture)
+            {
+                item.BorderStyle = BorderStyle.None;
+            }
+            pictureBoxMaceList.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBoxPotionBlueList_Click(object sender, EventArgs e)
+        {
+            foreach (PictureBox item in listPicture)
+            {
+                item.BorderStyle = BorderStyle.None;
+            }
+            pictureBoxPotionBlueList.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBoxPotionRedList_Click(object sender, EventArgs e)
+        {
+            foreach (PictureBox item in listPicture)
+            {
+                item.BorderStyle = BorderStyle.None;
+            }
+            pictureBoxPotionRedList.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBoxSwordList_Click(object sender, EventArgs e)
+        {
+            foreach (PictureBox item in listPicture)
+            {
+                item.BorderStyle = BorderStyle.None;
+            }
+            pictureBoxSwordList.BorderStyle = BorderStyle.Fixed3D;
+        }
     }
 }

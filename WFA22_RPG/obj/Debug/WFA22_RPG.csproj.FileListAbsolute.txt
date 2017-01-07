@@ -8,3 +8,13 @@ c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Deb
 c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.exe
 c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.pdb
 c:\users\janek\documents\visual studio 2015\Projects\WFA22_RPG\WFA22_RPG\obj\Debug\WFA22_RPG.Resource.resources
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\bin\Debug\WFA22_RPG.exe.config
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\obj\Debug\WFA22_RPG.exe
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\obj\Debug\WFA22_RPG.pdb
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\bin\Debug\WFA22_RPG.exe
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\bin\Debug\WFA22_RPG.pdb
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\obj\Debug\WFA22_RPG.csprojResolveAssemblyReference.cache
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\obj\Debug\WFA22_RPG.Form1.resources
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\obj\Debug\WFA22_RPG.Properties.Resources.resources
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\obj\Debug\WFA22_RPG.Resource.resources
+C:\Users\Janek\Documents\Visual Studio 2015\Projects\rpgGame\rpgGame\WFA22_RPG\obj\Debug\WFA22_RPG.csproj.GenerateResource.Cache

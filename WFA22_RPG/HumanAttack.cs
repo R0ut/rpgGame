@@ -32,7 +32,6 @@ namespace WFA22_RPG
         {
             if (IsEnable() && !IsDeath() && attackPower != 0)
             {
-               // progMonster.Value -= attackPower;
                 item.WeaponOrHeal(progHuman, progMonster);
             }
         }
