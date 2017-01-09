@@ -35,8 +35,8 @@ namespace WFA22_RPG
             buttonRight.Text = char.ConvertFromUtf32(8594);
             moveHuman = new MoveHuman(progressBarHuman);
             moveMonster = new MoveMonster(pictureBoxPlayer,progressBarBat);
-            humanAttack = new HumanAttack(pictureBoxPlayer, monsterPic,progressBarHuman, monsterBar, 1, 2);
-            itemV = new ItemsViasble(pictureBoxSwordItem, pictureBoxBowItem, pictureBoxMaceItem, pictureBoxPotionBlueItem, pictureBoxPotionRedItem,
+            humanAttack = new HumanAttack(pictureBoxPlayer, monsterPic,progressBarHuman, monsterBar, 0, 2);
+            itemV = new ItemsViasble(pictureBoxPlayer, pictureBoxSwordItem, pictureBoxBowItem, pictureBoxMaceItem, pictureBoxPotionBlueItem, pictureBoxPotionRedItem,
                 pictureBoxSwordList,pictureBoxBowList,pictureBoxMaceList,pictureBoxPotionBlueList,pictureBoxPotionRedList);
             initList();
             
